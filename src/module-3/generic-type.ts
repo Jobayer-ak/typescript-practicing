@@ -36,13 +36,18 @@ const useNameAndRollNumbers: GenericArray<NameRollType> = [
 type GenericTuple<X, Y> = [X, Y]; // generic tuple
 const relation: GenericTuple<string, string> = ['Johny', 'Amber'];
 
-type RelationWithSalaryType = {
+// type RelationWithSalaryType = {
+//   name: string;
+//   salary: number;
+// };
+
+interface RelationWithSalaryInterface {
   name: string;
   salary: number;
-};
+}
 
 // we should not use object in generic type
-const relationWithSalary: GenericTuple<RelationWithSalaryType, string> = [
+const relationWithSalary: GenericTuple<RelationWithSalaryInterface, string> = [
   {
     name: 'Johny',
     salary: 100000,
