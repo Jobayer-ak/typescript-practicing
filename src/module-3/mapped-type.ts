@@ -19,6 +19,8 @@ const area1: Area<{ height: number; width: string }> = {
   width: '10',
 };
 
+area1.height = 20;
+
 type AreaString = {
   height: string;
   width: string;
