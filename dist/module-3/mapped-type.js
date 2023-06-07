@@ -7,6 +7,7 @@ const area1 = {
     height: 10,
     width: '10',
 };
+area1.height = 20;
 const recangularArea = {
     height: 10,
     width: 12,
