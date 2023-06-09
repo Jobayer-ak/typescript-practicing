@@ -1,8 +1,8 @@
-// Suppose you have an array of tuples, where each tuple represents a product and contains the product name, price, and quantity. Wrie a ts function that calculates the total cost of all the products in the array, using a generic type for the tuple and a type alias for the array.
+
 
 // you have an interface for product, containing the product's id, name ,price, and category. You want to filter an array of products based on a specific criterion and value. (write a typscript generic function that takes this array, a criterion, and returns a new array containing only the products that match the given criterion and value. Use a generic type parameter in the function signature to ensure type safety)
 
-interface Product {
+type Product = {
     id: number;
     name: string;
     price: number;
