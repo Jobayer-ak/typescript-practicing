@@ -1,3 +1,5 @@
-import { addNumber as addTwo, substract } from "./module";
-console.log(addTwo(2, 5));
-console.log(substract(2, 7));
+// import multiply, {addNumber, substract} from "./module";
+import methods from "./utils/index";
+const addNumber = methods.add(1, 2);
+const multiplyNumber = methods.multiply(2, 3);
+const subtractNumber = methods.substract(10, 20);
